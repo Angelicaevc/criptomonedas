@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+.contenedor{
+    width: 90%;
+    min-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, hsla(41, 96%, 78%, 0.5) 0%, hsla(183, 100%, 91%, 0.5) 100%), url(../img/cabecera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:darkblue;
+}
+.hamburguer{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    transform: translate(110%);
+}
+header:hover .menu-navegacion{
+    transform: translate(0);  
+}
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+.titulo{
+    font-size: 90px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ccc;
+}
+.head p{
+    font-weight: 500;
+    font-size: 45px;
+}
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(34, 68, 131);
+    margin-bottom: 40px;
+    font-size: 40px;
+    border-bottom: 1.5px solid rgb(20, 20, 143);
+}
+.contenedor-definicion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.publicidad{
+    width: 550px;
+    height: 450px;
+    background: rgb(136, 180, 221);
+    margin: auto;  
+    transition: 0.4s;
+}
+.publicidad:hover{
+    background: rgb(104, 102, 102);
+    transition: 0.4s;
+}
+.publicidad h3{
+    padding-top: 30px;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+}
+.publicidad img{
+    width: 500px;
+    height: 300px;
+    padding-top:10px;
+    padding-left: 50px;
+}
+.publicidad p{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.cripto-definicion{
+    width: 45%;
+}
+.definicion{
+    margin-bottom: 20px;
+}
+.definicion h3{
+    margin-bottom: 7px;
+    color: rgb(34, 68, 131);
+}
+.populares{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont-populares{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cont-populares img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}.n-populares{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+.precio{
+    background:rgb(236, 240, 245);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont-precio{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cont-precio img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}.n-precio{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+.ventajas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont-ventajas{
+    width: 18%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cont-ventajas img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}.n-ventajas{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+.contacto{
+    background:rgb(20, 20, 143);
+    padding: 50px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-contacto{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #fff;
+}
+.contenedor-con{
+    text-align: center;  
+}
+.contenedor-con h4{
+    color: #fff;
+    border-bottom: 3px solid rgb(138, 138, 138);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.contenedor-con p{
+    color:#fff;
+}
+.footer{
+    background:rgb(161, 157, 157);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.final{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    color: black;
+}
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+    .titulo{
+        font-size: 50px;
+    }
+    .contenedor-definicion img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .cripto-definicion{
+        width: 80%;
+    }
+    .definicion{
+        margin-bottom: 30px;
+    }
+    .cont-populares{
+        width: 80%;
+    }
+    .cont-precio{
+        width: 80%;
+    }
+    .cont-ventajas{
+        width: 80%;
+    }
+}
